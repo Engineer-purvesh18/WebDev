@@ -1,0 +1,165 @@
+*{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    padding: 0PX;
+    margin: 0px;
+}
+nav{
+    background-color:black;
+    color: white;
+    height: 170px;
+    padding: 20px 50px;
+    border-bottom: 1px solid rgb(76, 251, 76);
+}
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+img {
+    margin-bottom: 0;
+}
+
+h1 {
+    margin-top: 0;
+    padding-left: 10%;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+
+.searchInput{
+    border: none;
+    background-color:whitesmoke;
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 28px;
+    outline: none;
+    margin-right: 10px;
+    font-size: 16px;
+    width: 400px;
+
+}
+
+
+.search::placeholder{
+    color: black;
+}
+
+.search-icon {
+    display: inline-block;
+    position: absolute;
+    color: whitesmoke;
+    margin-top: 7px;
+    font-size: 27px;
+    
+}
+.LimitedOffer{
+
+    font-size: 20px;
+    border-bottom: 2px solid #A561CB;
+    cursor: pointer;
+}
+
+.navBottom{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.menuItem{
+    margin-right: 50px;
+    margin-top: 5px;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+}
+
+.slider {
+    background: url("https://wallpapers.com/images/high/all-black-background-naarm5379b1njo8i.webp");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+}
+
+.sliderWrapper {
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+}
+.sliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.SliderBg {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: aquamarine;
+    transform: scale(0.55);
+}
+
+
+
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: whitesmoke;
+    font-size: 65px;
+    font-weight: 900;
+    text-align: center;
+    z-index: 1;;
+}
+
+.sliderPrice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: whitesmoke;
+    font-size: 65px;
+    font-weight: 400;
+    text-align: center;
+    z-index: 1;
+}
+
+.sliderImg {
+    z-index: 1;
+    transition: transform 0.5s ease;
+}
+
+.sliderImg:hover{
+    transform: scale(1.1) rotate(5deg);
+}
+.buyButton{
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    color: whitesmoke;
+    font-size: 30px;
+    font-weight: 900;
+    border: 1px solid gray;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;
+}
+.buyButton:hover{
+    background-color: white;
+    color: black;
+}
